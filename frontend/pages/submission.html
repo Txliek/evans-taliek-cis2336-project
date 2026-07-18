@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Art | ArtConnect</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">ArtConnect</a>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="submission.html">Submit Art</a>
+                <a href="faq.html">FAQ</a>
+                <a href="references.html">References</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <p class="eyebrow">Share Your Work</p>
+            <h1>Artist Submission</h1>
+            <p>
+                Submit your artwork information for consideration in the
+                ArtConnect gallery.
+            </p>
+        </section>
+
+        <section class="submission-section">
+
+            <form id="artSubmissionForm" class="submission-form" novalidate>
+
+                <div class="form-group">
+                    <label for="artistName">Artist Name</label>
+                    <input type="text" id="artistName" name="artistName">
+                    <small class="error-message" id="artistNameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="artistEmail">Email Address</label>
+                    <input type="email" id="artistEmail" name="artistEmail">
+                    <small class="error-message" id="artistEmailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="artworkTitle">Artwork Title</label>
+                    <input type="text" id="artworkTitle" name="artworkTitle">
+                    <small class="error-message" id="artworkTitleError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="artworkCategory">Category</label>
+
+                    <select id="artworkCategory" name="artworkCategory">
+                        <option value="">Select a category</option>
+                        <option value="abstract">Abstract</option>
+                        <option value="digital">Digital Art</option>
+                        <option value="photography">Photography</option>
+                        <option value="painting">Painting</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <small class="error-message" id="artworkCategoryError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="artworkPrice">Price</label>
+                    <input
+                        type="number"
+                        id="artworkPrice"
+                        name="artworkPrice"
+                        min="0"
+                        step="0.01"
+                        placeholder="Enter 0 if not for sale">
+
+                    <small class="error-message" id="artworkPriceError"></small>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="artworkDescription">Description</label>
+
+                    <textarea
+                        id="artworkDescription"
+                        name="artworkDescription"
+                        rows="6"
+                        placeholder="Tell us about the artwork and your creative process.">
+                    </textarea>
+
+                    <small class="error-message" id="artworkDescriptionError"></small>
+                </div>
+
+                <div class="full-width">
+                    <button type="submit" class="submit-art-btn">
+                        Submit Artwork
+                    </button>
+                </div>
+
+                <p id="formSuccess" class="form-success">
+                    Your artwork information was submitted successfully.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ArtConnect | Designed by Taliek Evans</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

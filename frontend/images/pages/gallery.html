@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | ArtConnect</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">ArtConnect</a>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="events.html">Events</a>
+                <a href="submission.html">Submit Art</a>
+                <a href="faq.html">FAQ</a>
+                <a href="references.html">References</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <p class="eyebrow">Discover New Work</p>
+            <h1>Explore the Gallery</h1>
+
+            <p>
+                Browse a collection of artwork from emerging artists across
+                different creative styles and categories.
+            </p>
+        </section>
+
+        <section class="gallery-section">
+
+            <div class="gallery-controls">
+                <input
+                    type="text"
+                    id="artSearch"
+                    placeholder="Search by title or artist">
+
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="abstract">Abstract</option>
+                    <option value="digital">Digital Art</option>
+                    <option value="photography">Photography</option>
+                    <option value="painting">Painting</option>
+                </select>
+            </div>
+
+            <div class="gallery-grid">
+
+                <article
+                    class="gallery-card"
+                    data-category="abstract"
+                    data-title="Quiet Motion Maya Brooks">
+
+                    <div class="gallery-image artwork-one"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Abstract</p>
+                        <h2>Quiet Motion</h2>
+                        <p>By Maya Brooks</p>
+                        <strong>$240</strong>
+                    </div>
+                </article>
+
+                <article
+                    class="gallery-card"
+                    data-category="digital"
+                    data-title="City Bloom Jordan Lee">
+
+                    <div class="gallery-image artwork-two"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Digital Art</p>
+                        <h2>City Bloom</h2>
+                        <p>By Jordan Lee</p>
+                        <strong>$180</strong>
+                    </div>
+                </article>
+
+                <article
+                    class="gallery-card"
+                    data-category="photography"
+                    data-title="Blue Hour Nia Carter">
+
+                    <div class="gallery-image artwork-three"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Photography</p>
+                        <h2>Blue Hour</h2>
+                        <p>By Nia Carter</p>
+                        <strong>Not for Sale</strong>
+                    </div>
+                </article>
+
+                <article
+                    class="gallery-card"
+                    data-category="painting"
+                    data-title="Soft Horizon Elias Reed">
+
+                    <div class="gallery-image artwork-four"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Painting</p>
+                        <h2>Soft Horizon</h2>
+                        <p>By Elias Reed</p>
+                        <strong>$325</strong>
+                    </div>
+                </article>
+
+                <article
+                    class="gallery-card"
+                    data-category="digital"
+                    data-title="Neon Memory Ava Wilson">
+
+                    <div class="gallery-image artwork-five"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Digital Art</p>
+                        <h2>Neon Memory</h2>
+                        <p>By Ava Wilson</p>
+                        <strong>$210</strong>
+                    </div>
+                </article>
+
+                <article
+                    class="gallery-card"
+                    data-category="abstract"
+                    data-title="Between Lines Marcus Hill">
+
+                    <div class="gallery-image artwork-six"></div>
+
+                    <div class="gallery-card-content">
+                        <p class="art-category">Abstract</p>
+                        <h2>Between Lines</h2>
+                        <p>By Marcus Hill</p>
+                        <strong>Not for Sale</strong>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="noResults" class="no-results">
+                No artwork matches your search.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ArtConnect | Designed by Taliek Evans</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
